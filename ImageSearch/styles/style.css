@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h5, h4, h3, h2, h1 {
+    font-family: "Oswald", sans-serif;
+
+}
+p, btn{
+    font-family: "PT Sans", sans-serif;
+
+}
+
+body {
+    background: linear-gradient(to bottom, #e0e0e0, #6d757c); /* Gradiente cinzento */
+    min-height: 100vh; /* Garante que o fundo cobre toda a altura da página */
+    margin: 0;
+    padding: 0;
+}
+
+/* Efeito hover para os ícones */
+.social-icon {
+    text-decoration: none; /* Remove o sublinhado ou traço dos links */
+}
+
+.social-icon:hover i {
+    color: #0d6efd; /* Muda a cor do ícone ao passar o rato */
+    transition: color 0.3s
+}
+
+.header-background {
+    background-image: url('../outrasImgs/pexels-plato-terentev-3804555-5821552.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    position: relative;
+}
+
+.header-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-overlay h1 {
+    font-size: 6rem; 
+    -webkit-text-stroke: 2px black; /* Contorno do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.pesquisas h2{
+    text-shadow: 1px 1px 1px rgb(97, 96, 96);
+}
+
+.cores button {
+    transition: transform 0.2s ease-in-out;
+}
+
+.cores button:hover {
+    transform: translateY(-5px); 
+}
+
+#canvas {
+    border: 5px solid black;
+    background-color:rgb(255, 255, 255);
+    border-radius: 1%;
+    align-content: center;
+    
+}
+
+/* loading */
+.progress {
+    height: 20px;
+    border: 1px solid #805e00; 
+}
+
+.progress-bar {
+    background-color: #fdbd0d;
+}
+
+

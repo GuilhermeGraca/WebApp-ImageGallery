@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script type="module" src="scripts/ISearchEngine_Manager.js"></script>
+</head>
+
+<body>
+    <!-- Barra superior com ícones de redes sociais e nomes -->
+    <div class="bg-dark text-light py-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Ícones Guilherme -->
+            <div>
+                <span class="me-3">Guilherme Graça</span>
+                <a href="https://www.instagram.com/guilhermegraca_/" class="text-light me-3 social-icon">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://github.com/GuilhermeGraca" class="text-light me-3 social-icon">
+                <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/guilherme-gra%C3%A7a-b58299330/" class="text-light social-icon">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <!-- Ícones Martim -->
+            <div>
+            <a href="https://www.facebook.com/martim.ramos.98?locale=pt_PT" class="text-light me-3 social-icon">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/marttim_ramos/" class="text-light me-3 social-icon">
+            <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://x.com/_Marttim_Ramos_" class="text-light social-icon">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <span class="ms-3">Martim Ramos</span>
+        </div>
+        </div>
+    </div>
+    
+    <header class="container-fluid p-0 shadow"> <!-- ocuppa 100% do viewport -->
+        <div class="header-background">
+            <div class="header-overlay">
+                <h1 class="text-center text-white py-5">Image Gallery</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="pesquisas mt-4">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <h2 class="text-center">Filtrar por Categoria</h2>
+                    <div class="input-group  shadow-sm"><!-- elementos agrupados -->
+                        <select id="Keywords" class="form-select">
+                            <option selected disabled>Keyword</option>
+                            <option value="great wall of china">Great Wall of China</option>
+                            <option value="chichen itza">Chichen Itza</option>
+                            <option value="statue of liberty">Statue of Liberty</option>
+                            <option value="christ the reedemer">Christ the Reedemer</option>
+                            <option value="roman colosseum">Roman Colosseum</option>
+                            <option value="burj khalifa">Burj Khalifa</option>
+                            <option value="pyramids of giza">Pyramids of Giza</option>
+                            <option value="taj mahal">Taj Mahal</option>
+                            <option value="venezuela angel falls">Venezuela Angel Falls</option>
+                            <option value="eiffel tower">Eiffel Tower</option>
+                            <option value="machu pichu">Machu Pichu</option>
+                            <option value="stonehenge">Stonehenge</option>
+                        </select>
+                        <button id="btn_keyword" class="btn btn-primary" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center">Filtrar por Cores</h2>
+                    <div class="d-flex flex-wrap justify-content-center cores">
+                        <button id="red" class="btn m-1 shadow-sm" style="background-color: #CD090C; width: 40px; height: 40px;" type="button"></button>
+                        <button id="orange" class="btn m-1 shadow-sm" style="background-color: #FC940F; width: 40px; height: 40px;" type="button"></button>
+                        <button id="yellow" class="btn m-1 shadow-sm" style="background-color: #FFFF06; width: 40px; height: 40px;" type="button"></button>
+                        <button id="green" class="btn m-1 shadow-sm" style="background-color: #2FCC15; width: 40px; height: 40px;" type="button"></button>
+                        <button id="Blue-green" class="btn m-1 shadow-sm" style="background-color: #2CC1C6; width: 40px; height: 40px;" type="button"></button>
+                        <button id="blue" class="btn m-1 shadow-sm" style="background-color: #0315FF; width: 40px; height: 40px;" type="button"></button>
+                        <button id="purple" class="btn m-1 shadow-sm" style="background-color: #762CA8; width: 40px; height: 40px;" type="button"></button>
+                        <button id="pink" class="btn m-1 shadow-sm" style="background-color: #FC98BF; width: 40px; height: 40px;" type="button"></button>
+                        <button id="white" class="btn m-1 shadow-sm" style="background-color: #FFFFFF; width: 40px; height: 40px;" type="button"></button>
+                        <button id="grey" class="btn m-1 shadow-sm" style="background-color: #999999; width: 40px; height: 40px;" type="button"></button>
+                        <button id="black" class="btn m-1 shadow-sm" style="background-color: #000000; width: 40px; height: 40px;" type="button"></button>
+                        <button id="brown" class="btn m-1 shadow-sm" style="background-color: #88541D; width: 40px; height: 40px;" type="button"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="alert alert-warning text-center shadow-sm" role="alert" id="loading-message">
+                        Após o inicio da pagina, pode demorar um pouco até que as ferramentas de pesquisa funcionem devido ao carregamento da base de dados, por favor, aguarde.
+                        <div class="progress mt-2 mx-5">
+                            <div id="loading-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="visualization" class="mb-4">
+            <canvas id="canvas" width="1280" height="800" class="border border-dark shadow-lg">
+                Your browser doesn't recognize the canvas element
+            </canvas> 
+        </section>
+    </main>
+
+    <footer class=" text-light text-center py-4 mt-4">
+        <div class="container">
+            <p class="mb-0">ISEL 2024-2025</p>
+            <a href="#" class="text-light d-block">
+                <i class="bi bi-chevron-up"></i> para o topo <i class="bi bi-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <div class="bg-dark text-light py-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Ícones Guilherme -->
+            <div>
+                <span class="me-3">Guilherme Graça</span>
+                <a href="https://www.instagram.com/guilhermegraca_/" class="text-light me-3 social-icon">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://github.com/GuilhermeGraca" class="text-light me-3 social-icon">
+                <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/guilherme-gra%C3%A7a-b58299330/" class="text-light social-icon">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <!-- Ícones Martim -->
+            <div>
+            <a href="https://www.facebook.com/martim.ramos.98?locale=pt_PT" class="text-light me-3 social-icon">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/marttim_ramos/" class="text-light me-3 social-icon">
+            <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://x.com/_Marttim_Ramos_" class="text-light social-icon">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <span class="ms-3">Martim Ramos</span>
+        </div>
+        </div>
+    </div>
+
+    <audio id="click-sound" src="./audio/506053__mellau__button-click-2.wav"></audio>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
