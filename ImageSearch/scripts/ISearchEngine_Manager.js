@@ -20,7 +20,7 @@ function main() {
     const canvas = document.getElementById("canvas");
 
     // Create an instance of ISearchEngine with a reference to the database file
-    app = new ISearchEngine("database_full.json");
+    app = new ISearchEngine("database.json");
     /**
      * Exposing the application instance globally for debugging purposes.
      * 
