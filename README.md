@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/GuilhermeGraca/WebApp-ImageGallery">
-    <img src="preview/ImgGaleryBannerLogo.png" alt="Project Logo" width="100" height="100" style="border-radius: 8px; object-fit: cover;">
+    <img src="preview/ImgGaleryBannerLogo.png" alt="Project Logo" width="500" height="400" style="border-radius: 8px; object-fit: cover;">
   </a>
   <h3 align="center">Image Gallery</h3>
 
@@ -53,7 +53,11 @@
 
 <div align="center">
 
-preview/previewvideo.mp4
+
+
+https://github.com/user-attachments/assets/b9472c5e-c22b-429f-aab8-5d0f5e89244d
+
+
 
   <br />
   <p align="center">
