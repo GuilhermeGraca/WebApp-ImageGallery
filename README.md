@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO & HEADER -->
 <br />
 <div align="center">
-  <a href="https://github.com/GuilhermeGraca/webapp-imagegallery">
+  <a href="https://github.com/GuilhermeGraca/webapp-image-gallery">
     <img src="preview/ImgGaleryBannerLogo.png" alt="Project Logo" width="500" height="400" style="border-radius: 8px; object-fit: cover;">
   </a>
   <h3 align="center">Image Gallery</h3>
@@ -15,9 +15,9 @@
     <a href="#about-the-project"><strong>Explore the Documentation »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/GuilhermeGraca/webapp-imagegallery/issues">Report Bug</a>
+    <a href="https://github.com/GuilhermeGraca/webapp-image-gallery/issues">Report Bug</a>
     &middot;
-    <a href="https://github.com/GuilhermeGraca/webapp-imagegallery/issues">Request Feature</a>
+    <a href="https://github.com/GuilhermeGraca/webapp-image-gallery/issues">Request Feature</a>
   </p>
 </div>
 
@@ -126,11 +126,11 @@ Follow these instructions to set up a local copy of the project on your machine.
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/GuilhermeGraca/webapp-imagegallery.git
+   git clone https://github.com/GuilhermeGraca/webapp-image-gallery.git
    ```
 2. **Navigate to the project directory**:
    ```sh
-   cd webapp-imagegallery/ImageSearch
+   cd webapp-image-gallery/ImageSearch
    ```
 3. **Start a local development server**:
    * If using **VS Code**, right-click `index.html` and select **Open with Live Server**.
@@ -167,7 +167,7 @@ Follow these instructions to set up a local copy of the project on your machine.
 Guilherme Graça
 * LinkedIn: [Guilherme Graça](https://www.linkedin.com/in/guilherme-gra%C3%A7a-b58299330/)
 * GitHub: [@GuilhermeGraca](https://github.com/GuilhermeGraca)
-* Project Link: [https://github.com/GuilhermeGraca/webapp-imagegallery](https://github.com/GuilhermeGraca/webapp-imagegallery)
+* Project Link: [https://github.com/GuilhermeGraca/webapp-image-gallery](https://github.com/GuilhermeGraca/webapp-image-gallery)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
